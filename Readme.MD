@@ -1,4 +1,4 @@
-Prerequisites for React Native application (you should ave node.js installed):
+Prerequisites for React Native application (you should have node.js installed):
 1. Install Android Studio with Adroid SDK and Android Virtual Device
 2. Install react-native cli (npm install -g react-native-cli)
 3. Create new project (react-native init projectNameHere)
@@ -14,3 +14,6 @@ Prerequisites for React Native application (you should ave node.js installed):
 (ANDROID_HOME="c:\Program Files (x86)\Android\android-sdk\")
  Add also tools and platform-tools to PATH
 (set PATH=%PATH%;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools)
+
+#Site to generate icons
+(http://fa2png.io/) size is 256px. 2S colors - #cf022b/red, #ef7d00/orange.

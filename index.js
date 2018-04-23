@@ -4,9 +4,12 @@ import {Provider} from 'react-redux';
 import React, {Component} from 'react';
 //import App from './src/App';
 import AppWithNavigator from './src/navigator'
-import loadGreeting from './src/actions/loadGreetingActions'
+import {loadApiSettings} from "./src/actions/loadApiSettingsActions";
+//import loadGreeting from './src/actions/loadGreetingActions'
 
 const store = configureStore();
+//store.dispatch(loadApiSettings());
+
 
 class AppWithStore extends Component {
     render(){
