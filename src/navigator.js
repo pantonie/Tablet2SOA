@@ -25,6 +25,6 @@ const Navigator = StackNavigator(
         Login: {screen: Login}
     },
     {
-        initialRouteName: 'Music'
+        initialRouteName: 'Home'
     }
 );

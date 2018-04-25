@@ -79,12 +79,12 @@ const styles = StyleSheet.create({
     },
     image: {
         //height: Dimensions.get('window').width / 10,
-        marginBottom: -30,
+        //marginBottom: -40,
         flex: 1
 
     },
     text: {
-        // margin: 10
+        marginBottom: 40,
         fontSize: 24
 
     }
