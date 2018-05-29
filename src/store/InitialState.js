@@ -4,5 +4,10 @@ export default initialState = {
         {name: 'SomeSong', id: 123, artist: 'Name of artist here'},
         {name: 'Another Song', id: 124, artist: 'Name of another artist here'}
         ],
-    apiSettings: {ip: 'http://127.0.0.1/'}
+    apiSettings:
+        {
+            calendar: 'http://10.0.2.2:1337/calendar',
+            music: 'http://127.0.0.1/'
+        },
+    calendar: []
 }

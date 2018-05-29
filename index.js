@@ -4,11 +4,11 @@ import {Provider} from 'react-redux';
 import React, {Component} from 'react';
 //import App from './src/App';
 import AppWithNavigator from './src/navigator'
-import {loadApiSettings} from "./src/actions/loadApiSettingsActions";
+import {loadCalendar} from "./src/actions/loadCalendarActions";
 //import loadGreeting from './src/actions/loadGreetingActions'
 
 const store = configureStore();
-//store.dispatch(loadApiSettings());
+store.dispatch(loadCalendar());
 
 
 class AppWithStore extends Component {

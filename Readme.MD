@@ -15,5 +15,15 @@ Prerequisites for React Native application (you should have node.js installed):
  Add also tools and platform-tools to PATH
 (set PATH=%PATH%;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools)
 
-#Site to generate icons
+Site to generate icons:
 (http://fa2png.io/) size is 256px. 2S colors - #cf022b/red, #ef7d00/orange.
+
+To start app on emulator start emulator in AVD (Android studio -> Tools -> AVD) then run "npm run android" from command line
+
+# Debugging
++ react-devtools
++ react-native log-android (run from workin directory to be able to use console.log)
+
+### Tips and tricks
+
+Since Androis AVD is in fact another machine to be able to request localhost you need to use 10.0.2.2 address (AVD ip address) instead of localhost or 127.0.0.1;
