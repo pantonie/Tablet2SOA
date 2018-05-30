@@ -4,10 +4,12 @@ import greeting from './loadGreeting';
 import apiSettings from './apiSettingsReducer'
 import songs from './loadSongsReducer';
 import calendar from './loadCalendarReducer';
+import today from './updateTodayReducer'
 
 export default rootReducer = combineReducers({
     greeting,
     apiSettings,
     songs,
-    calendar
+    calendar,
+    today
 });

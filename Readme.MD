@@ -20,10 +20,10 @@ Site to generate icons:
 
 To start app on emulator start emulator in AVD (Android studio -> Tools -> AVD) then run "npm run android" from command line
 
-# Debugging
+### Debugging
 + react-devtools
-+ react-native log-android (run from workin directory to be able to use console.log)
++ react-native log-android (run from working directory to be able to use console.log)
 
 ### Tips and tricks
 
-Since Androis AVD is in fact another machine to be able to request localhost you need to use 10.0.2.2 address (AVD ip address) instead of localhost or 127.0.0.1;
+Since Android AVD is in fact another machine to be able to send requests to localhost you need to use 10.0.2.2 address (AVD ip address) instead of localhost or 127.0.0.1;

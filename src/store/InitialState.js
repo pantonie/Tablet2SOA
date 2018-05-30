@@ -1,3 +1,5 @@
+import getDayMonth from '../helpers/composeDate';
+
 export default initialState = {
     greeting: 'Hello 2S lab!',
     songs: [
@@ -9,5 +11,6 @@ export default initialState = {
             calendar: 'http://10.0.2.2:1337/calendar',
             music: 'http://127.0.0.1/'
         },
-    calendar: []
+    calendar: [],
+    today: getDayMonth()
 }

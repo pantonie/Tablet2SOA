@@ -5,10 +5,12 @@ import React, {Component} from 'react';
 //import App from './src/App';
 import AppWithNavigator from './src/navigator'
 import {loadCalendar} from "./src/actions/loadCalendarActions";
+import {updateToday} from './src/actions/updateTodayAction'
 //import loadGreeting from './src/actions/loadGreetingActions'
 
 const store = configureStore();
 store.dispatch(loadCalendar());
+setTimeout(store.dispatch(updateToday()), 60000);
 
 
 class AppWithStore extends Component {
