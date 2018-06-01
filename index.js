@@ -10,7 +10,7 @@ import {updateToday} from './src/actions/updateTodayAction'
 
 const store = configureStore();
 store.dispatch(loadCalendar());
-setTimeout(store.dispatch(updateToday()), 60000);
+setTimeout(() => store.dispatch(updateToday()), 60000);
 
 
 class AppWithStore extends Component {

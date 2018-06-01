@@ -13,7 +13,7 @@ class services extends Component {
     }
 
     openService(name) {
-        name === 'Music' ? this.props.navigation.navigate(name) : Alert.alert(`${name} is not ready yet but we are working on it :)`);
+        name === 'Music' || name === 'Calendar' ? this.props.navigation.navigate(name) : Alert.alert(`${name} is not ready yet but we are working on it :)`);
         //Alert.alert(name);
         //this.props.navigation.navigate(name);
     }

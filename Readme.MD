@@ -1,4 +1,4 @@
-Prerequisites for React Native application (you should have node.js installed):
+### Prerequisites for React Native application (you should have node.js installed):
 1. Install Android Studio with Adroid SDK and Android Virtual Device
 2. Install react-native cli (npm install -g react-native-cli)
 3. Create new project (react-native init projectNameHere)

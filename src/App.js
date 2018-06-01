@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import Home2S from './screens/home-2s'
+import Calendar from './screens/calendar'
 
 const mapStateToProps = function(state){
     return {
@@ -21,7 +22,8 @@ class App extends Component{
     };
     render() {
         return (
-            <Home2S />
+            //<Home2S />
+            <Calendar />
         );
     }
 }
