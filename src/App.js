@@ -22,8 +22,8 @@ class App extends Component{
     };
     render() {
         return (
-            //<Home2S />
-            <Calendar />
+            <Home2S />
+            //<Calendar />
         );
     }
 }
