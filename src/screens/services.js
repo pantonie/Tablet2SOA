@@ -13,7 +13,16 @@ class services extends Component {
     }
 
     openService(name) {
-        name === 'Music' || name === 'Calendar' ? this.props.navigation.navigate(name) : Alert.alert(`${name} is not ready yet but we are working on it :)`);
+        switch (name) {
+            case 'Music':
+                Alert.alert(`Ask Dmitry Kulikov when player will be ready :)`);
+                break;
+            case 'Login':
+                Alert.alert('I need fingerprint scanner. Do you have one?');
+                break;
+            default:
+                this.props.navigation.navigate(name);
+        }
         //Alert.alert(name);
         //this.props.navigation.navigate(name);
     }

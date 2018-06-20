@@ -31,3 +31,4 @@ Since Android AVD is in fact another machine to be able to send requests to loca
 ### Related repos
 + [Calendar API](https://github.com/pantonie/2S_lab_calendar_api)
 + [Music player](https://github.com/2s-lab/PlayerMiddleware)
++ [Trello API](https://github.com/pantonie/2S_lab_trello_api)

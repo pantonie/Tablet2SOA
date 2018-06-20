@@ -1,7 +1,7 @@
 import {View, Text, StyleSheet, Alert} from 'react-native';
 import React, {Component} from 'react';
 import {withNavigation} from 'react-navigation'
-import {Calendar as CalendarNative, Agenda, CalendarList} from 'react-native-calendars';
+import {CalendarList} from 'react-native-calendars';
 import {connect} from 'react-redux';
 import composeCalendar from '../helpers/composeCalendar'
 

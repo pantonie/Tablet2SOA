@@ -8,9 +8,14 @@ export default initialState = {
         ],
     apiSettings:
         {
-            calendar: 'http://10.0.2.2:1337/calendar',
-            music: 'http://127.0.0.1/'
+            calendar: 'http://10.30.200.101:1337/calendar',
+            music: 'http://127.0.0.1/',
+            trello: 'http://10.30.200.101:3001'
         },
     calendar: [],
+    trello: {
+        lists: [],
+        cards: []
+    },
     today: getDayMonth()
 }
