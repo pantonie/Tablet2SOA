@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
 
     },
     congrats:{
-        transform: [{translateY: Dimensions.get('window').height * 0.6}, {translateX: Dimensions.get('window').width * 0.1}],
+        transform: [{translateY: Dimensions.get('window').height * 0.5}, {translateX: Dimensions.get('window').width * 0.1}],
         fontFamily: 'IndieFlower',
         fontSize: 90,
         color: '#8b4dd6'
