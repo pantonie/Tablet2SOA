@@ -22,8 +22,8 @@ class App extends Component{
     };
     render() {
         return (
-            //<Home2S />
-            <Trello />
+            <Home2S />
+            //<Trello />
         );
     }
 }

@@ -1,5 +1,5 @@
 import {View, Text, StyleSheet, FlatList, Alert} from 'react-native';
-import {List, ListItem, Header} from 'react-native-elements';
+import {List, ListItem, Header, Icon} from 'react-native-elements';
 import React, {Component} from 'react';
 import {withNavigation} from 'react-navigation'
 import {connect} from 'react-redux';
@@ -74,14 +74,26 @@ class Trello extends Component{
                                         return (
                                             <ListItem
                                                 title={card.name}
-                                                subtitle={'Opened card'}
+                                                leftIcon = {{name: 'keyboard-arrow-up'}}
                                                 onPress={() => this.onClickHandle(card.id)}
+                                                hideChevron
                                             />)
                                     } else {
                                     return(
                                         <ListItem
-                                            title={card.name}
-                                            subtitle={'Votes: ' + card.votes}
+                                            title={
+                                                <Text style={{fontSize: 14, color: ''}}>
+                                    {card.name}
+                                                </Text>
+                                            }
+                                            subtitle={
+                                                <View style={{flexDirection:'row', flexWrap:'wrap'}}>
+                                                    <Icon name='thumb-up' size={16} color='#ef7d00'/>
+                                                    <Text>{'  ' + card.votes}</Text>
+                                                </View>
+                                            }
+                                            containerStyle = {{backgroundColor: '#F1F1F1', paddingLeft: 30  }}
+                                            hideChevron
                                         />
                                     )}
                                 })
@@ -92,6 +104,8 @@ class Trello extends Component{
                                 <ListItem
                                     title={item.name}
                                     onPress={() => this.onClickHandle(item.id)}
+                                    leftIcon = {{name: 'keyboard-arrow-down'}}
+                                    hideChevron
                                 />
                             )
                         }

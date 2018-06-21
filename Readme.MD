@@ -28,6 +28,9 @@ To start app on emulator start emulator in AVD (Android studio -> Tools -> AVD) 
 
 Since Android AVD is in fact another machine to be able to send requests to localhost you need to use 10.0.2.2 address (AVD ip address) instead of localhost or 127.0.0.1;
 
+### How to build app
+[Android build](https://facebook.github.io/react-native/docs/signed-apk-android.html)
+
 ### Related repos
 + [Calendar API](https://github.com/pantonie/2S_lab_calendar_api)
 + [Music player](https://github.com/2s-lab/PlayerMiddleware)

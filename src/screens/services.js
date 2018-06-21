@@ -18,7 +18,7 @@ class services extends Component {
                 Alert.alert(`Ask Dmitry Kulikov when player will be ready :)`);
                 break;
             case 'Login':
-                Alert.alert('I need fingerprint scanner. Do you have one?');
+                Alert.alert('Digilab needs fingerprint scanner. Do you have one?');
                 break;
             default:
                 this.props.navigation.navigate(name);
