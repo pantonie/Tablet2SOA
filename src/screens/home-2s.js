@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {View, Image, StyleSheet, TouchableOpacity, Text, ImageBackground, Dimensions, Alert } from 'react-native';
 import {withNavigation} from 'react-navigation';
 import { connect } from 'react-redux';
+import KeepAwake from 'react-native-keep-awake';
 
 const mapStateToProps = state => {
     return {
@@ -23,6 +24,7 @@ class Home2S extends Component {
             <TouchableOpacity onPress={() => this.props.navigation.navigate('Services')}>
                 <Image source={require('../assets/images/2s.png')}/>
             </TouchableOpacity>
+            <KeepAwake />
         </View>
     );
 
@@ -33,6 +35,7 @@ class Home2S extends Component {
                     <Text style={styles.congrats}>{hero.name+' '+hero.surname+'!!!'}</Text>
                </ImageBackground>
             </TouchableOpacity>
+            <KeepAwake />
         </View>
     )
 
